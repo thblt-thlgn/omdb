@@ -13,7 +13,7 @@ import {
 const API_HOSTNAME = 'http://www.omdbapi.com';
 const API_VERSION = 1;
 
-class OMDb {
+export class OMDb {
   #apiKey: string;
 
   constructor(apiKey: string) {

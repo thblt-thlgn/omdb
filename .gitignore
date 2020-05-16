@@ -50,3 +50,4 @@ coverage
 # GENERATED
 # ------------------
 dist
+types

@@ -20,7 +20,9 @@
     "strictBindCallApply": true,
     "forceConsistentCasingInFileNames": true,
     "removeComments": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "types"
   },
   "include": ["src/**/*"]
 }
