@@ -1,5 +1,5 @@
 import * as http from 'http';
-import { APISearchResponse, APIError } from './typing';
+import { APISearchResponse, APIError, APIFetchResponse } from './typing';
 
 export const generateQueryParams = (
   queryParams: Record<string, string | number | undefined>,
@@ -9,7 +9,11 @@ export const generateQueryParams = (
     .map(([key, value]) => `${key}=${value}`)
     .join('&');
 
-export const fetch = <T extends APISearchResponse>(uri: string): Promise<T> =>
+export const asNumber = (value: string): number => parseFloat(value.replace(',', '.'));
+
+export const asNullable = (value: string): string | null => (value === 'N/A' ? null : value);
+
+export const fetch = <T extends APISearchResponse | APIFetchResponse>(uri: string): Promise<T> =>
   new Promise((resolve, reject) => {
     const onComplete = (bufferedData: Buffer[]): void => {
       const result = JSON.parse(String(Buffer.concat(bufferedData))) as T | APIError;

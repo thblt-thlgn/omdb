@@ -5,7 +5,7 @@ interface SearchItem {
   year: number;
   imdbID: string;
   type: DataType;
-  poster?: string;
+  poster: string | null;
 }
 
 export type SearchResponse = SearchItem[];

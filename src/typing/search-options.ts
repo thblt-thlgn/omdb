@@ -1,7 +1,6 @@
 import { DataType } from './data-type';
 
-export interface SearchParam {
-  search: string;
+export interface SearchOptions {
   type?: DataType;
   year?: number;
   page?: number;
