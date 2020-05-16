@@ -1,0 +1,52 @@
+# ------------------
+# OS X
+# ------------------
+.DS_Store*
+Icon?
+._*
+
+# ------------------
+# WINDOWS
+# ------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ------------------
+# LINUX
+# ------------------
+.directory
+*~
+
+# ------------------
+# NPM
+# ------------------
+node_modules
+*.log
+*.gz
+npm-debug.log
+
+# ------------------
+# MISC
+# ------------------
+.env
+test.env
+logs
+coverage
+
+# ------------------
+# EDITORS
+# ------------------
+.idea
+.vs
+.project
+.classpath
+.c9
+.launch
+.settings
+.sublime-workspace
+
+# ------------------
+# GENERATED
+# ------------------
+dist
