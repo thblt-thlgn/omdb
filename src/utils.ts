@@ -25,7 +25,7 @@ export const fetch = <T extends APISearchResponse | APIFetchResponse>(uri: strin
     };
 
     http
-      .get(uri, {}, (res) => {
+      .get(encodeURI(uri), {}, (res) => {
         const bufferedData: Buffer[] = [];
 
         res.on('data', (data) => {
