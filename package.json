@@ -1,7 +1,7 @@
 {
   "name": "@thblt-thlgn/omdb",
   "description": "Non official OMDb Typescript SDK",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Thibault Théologien <thibault.theologien@hotmail.fr>",
   "license": "UNLICENSED",
   "main": "dist/index.js",
@@ -9,7 +9,11 @@
   "private": false,
   "scripts": {
     "build": "tsc",
+    "lint": "eslint",
     "test": "mocha -r ts-node/register __test__/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">13.0.0"
   },
   "dependencies": {
     "typescript": "^3.9.2"
