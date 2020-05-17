@@ -1,5 +1,8 @@
 # OMDb Typescript SDK
 
+![](https://github.com/thblt-thlgn/omdb/workflows/Run%20tests/badge.svg)
+[![npm version](https://badge.fury.io/js/%40thblt-thlgn%2Fomdb.svg)](https://badge.fury.io/js/%40thblt-thlgn%2Fomdb)
+
 Lightweight non official [OMDb](http://www.omdbapi.com/) (Movie database) Typescript SDK
 
 _Contributions are more than welcome_
